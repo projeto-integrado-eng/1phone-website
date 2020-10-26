@@ -28,6 +28,10 @@
       href="{{ url_for('static', filename='styles/layout.css') }}"
       rel="stylesheet"
     />
+
+    <!-- Import scripts -->
+    <script defer src="{{ url_for('static', filename='scripts/layout.js') }}"></script>
+
     {% block head %}{% endblock %}
   </head>
   <body>

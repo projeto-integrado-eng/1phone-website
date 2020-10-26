@@ -27,10 +27,14 @@ p {
 
 header {
   display: flex;
+  position: sticky;
+  top: 0;
   align-items: center;
   justify-content: space-between;
+  transition: 0.2s;
+  z-index: 1;
   margin-bottom: 80px;
-  box-shadow: var(--shadow);
+  background: white;
   padding: 5px;
 }
 .logo-1phone {
