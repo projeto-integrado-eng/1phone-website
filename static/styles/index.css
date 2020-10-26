@@ -4,7 +4,7 @@ section {
 h1,
 h2,
 h3,
-span.material-icons {
+.material-icons {
   text-align: center;
   color: var(--black);
 }
@@ -68,15 +68,22 @@ h3 {
   font-size: 1.75rem;
 }
 .video-button::before {
-  vertical-align: middle;
-  font-size: 12px;
-  content: "▶ ";
+  display: block;
+  transform: scaleX(0) translate(0, 31px);
+  transition: 0.3s;
+  opacity: 0.4;
+  background-color: var(--red);
+  height: 3px;
+  content: "";
+}
+.video-button:hover::before {
+  transform: scaleX(1) translate(0, 31px);
 }
 .material-icons {
   width: 100%;
   font-size: 60px;
 }
-span.icon-eco {
+.icon-eco {
   color: #1fe4b5;
 }
 .mission-section-text-container {
@@ -97,7 +104,7 @@ span.icon-eco {
   margin: 50px auto;
   width: 1200px;
 }
-span.icon-camera {
+.icon-camera {
   color: #97bdc6;
 }
 .photo-grid {
