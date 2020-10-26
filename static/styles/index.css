@@ -26,9 +26,9 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 210px;
-  margin-bottom: 120px;
-  height: 600px;
+  margin-top: 240px;
+  margin-bottom: 100px;
+  height: 580px;
 }
 .gradient {
   border-radius: 50%;
@@ -55,7 +55,7 @@ h3 {
 }
 .phone-front {
   position: relative;
-  bottom: 1870px;
+  bottom: 1800px;
   left: 165px;
   width: 600px;
 }

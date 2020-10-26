@@ -6,3 +6,6 @@ window.onscroll = () => {
   header.style.boxShadow =
     window.scrollY < header.offsetHeight ? "none" : "var(--shadow)";
 };
+
+// Initialize RellaxJS
+const rellax = new Rellax(".rellax");

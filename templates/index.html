@@ -4,21 +4,29 @@
     href="{{ url_for('static', filename='styles/index.css') }}"
     rel="stylesheet"
   />
+  <!-- Import RellaxJS -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
+    integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ=="
+    crossorigin="anonymous"
+  ></script>
 {% endblock %}
 {% block body %}
   <section>
     <h1>1Phone</h1>
     <h3>O smartphone sustentável.</h3>
     <div class="phone-container">
-      <div class="gradient gradient-purple"></div>
-      <div class="gradient gradient-green"></div>
+      <div class="gradient gradient-purple rellax" data-rellax-speed="1"></div>
+      <div class="gradient gradient-green rellax" data-rellax-speed="3"></div>
       <img
-        class="phone-back"
+        class="phone-back rellax"
+        data-rellax-speed="2"
         src="{{ url_for('static', filename='images/1phone-back.png') }}"
         alt="Two stacked 1Phones. Back side."
       />
       <img
-        class="phone-front"
+        class="phone-front rellax"
+        data-rellax-speed="3"
         src="{{ url_for('static', filename='images/1phone-front.png') }}"
         alt="Two stacked 1Phones. Front side."
       />
