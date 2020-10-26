@@ -20,12 +20,19 @@
     />
 
     <!-- Import stylesheets -->
-    <link href="../static/styles/reset.css" rel=" stylesheet" />
-    <link href="../static/styles/main.css" rel="stylesheet" />
+    <link
+      href="{{ url_for('static', filename='styles/reset.css') }}"
+      rel=" stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='styles/main.css') }}"
+      rel="stylesheet"
+    />
+    {% block head %}{% endblock %}
   </head>
   <body>
     <header>
-      <a class="logo-1phone" href>
+      <a class="logo-1phone" href="{{ url_for('index') }}">
         <svg viewBox="0 0 100 100">
           <path d="M92.52,7.48v85h-85v-85h85M100,0H0V100H100V0Z"></path>
           <rect x="75.21" y="12.61" width="11.54" height="46.15"></rect>
@@ -47,7 +54,9 @@
     {% block body %}{% endblock %}
     <footer>
       <img src="../static/images/github-logo.svg" alt="Logo do Github" />
-      <a href="https://github.com/projeto-integrado-eng/1phone-website">Código fonte</a>
+      <a href="https://github.com/projeto-integrado-eng/1phone-website"
+        >Código fonte</a
+      >
     </footer>
   </body>
 </html>
