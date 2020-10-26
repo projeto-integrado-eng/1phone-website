@@ -1,0 +1,96 @@
+/* Set default font and initialize variables */
+:root {
+  font-family: Montserrat, sans-serif;
+  --black: #474747;
+  --red: #e83247;
+  --shadow: #0003 0 0 15px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Set default <small>, <b>, and <p> values */
+small {
+  font-size: 0.65em;
+  font-weight: 300;
+}
+b {
+  font-size: 1.25em;
+  font-weight: 600;
+}
+p {
+  color: var(--black);
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  box-shadow: var(--shadow);
+  padding: 5px;
+}
+.logo-1phone {
+  margin: 10px;
+  width: 38px;
+  line-height: 0;
+  fill: var(--red);
+}
+.tab-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tab,
+.tab-active {
+  font-size: 1.125rem;
+}
+.tab {
+  padding: 0 6px;
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 300;
+}
+.tab-active {
+  border-radius: 5px;
+  background: #0000000a;
+  font-weight: 600;
+}
+.subscribe-container {
+  display: flex;
+  align-items: center;
+}
+.subscribe-text {
+  text-align: end;
+  line-height: 1;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.subscribe-button {
+  margin: 10px;
+  border-radius: 5px;
+  background: var(--red);
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  background-color: #0000000f;
+}
+footer > * {
+  margin: 10px;
+}
+footer a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1.125rem;
+}
