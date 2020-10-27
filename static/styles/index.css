@@ -112,6 +112,7 @@ h3 {
   grid-template-columns: max-content max-content;
   margin: auto;
   width: max-content;
+  height: 2400px;
 }
 .photo-grid > * {
   margin: 30px;
@@ -125,8 +126,9 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 350px;
 }
 /* Add extra top margin to last photo grid child */
 .photo-grid > div:nth-child(4) {
-  margin-top: 200px;
+  margin-top: 450px;
 }
